@@ -5,6 +5,12 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
 }
 
 header {
@@ -13,6 +19,7 @@ header {
     padding: 20px;
     text-align: center;
     font-size: 24px;
+    transition: background 0.5s ease;
 }
 
 nav ul {
@@ -21,6 +28,7 @@ nav ul {
     display: flex;
     justify-content: center;
     background: #333;
+    transition: background 0.5s ease;
 }
 
 nav ul li {
@@ -33,6 +41,7 @@ nav ul li a {
     font-size: 18px;
     padding: 10px 15px;
     display: block;
+    transition: color 0.3s, background 0.3s;
 }
 
 nav ul li a:hover {
@@ -43,6 +52,37 @@ nav ul li a:hover {
 section {
     padding: 20px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background: #666;
 }
 
 #surah-list {
@@ -59,16 +99,29 @@ section {
     margin: 10px;
     width: 250px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 0.5s ease-in-out forwards;
 }
 
 .surah-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .surah-card h3 {
     margin: 10px 0;
     color: #1e3c72;
+    transition: color 0.3s;
+}
+
+.dark-mode .surah-card {
+    background: #333;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .surah-card h3 {
+    color: #ddd;
 }
 
 #about img {
@@ -77,4 +130,5 @@ section {
     height: 150px;
     object-fit: cover;
     margin-top: 10px;
+    animation: fadeInUp 0.8s ease-in-out forwards;
 }
