@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 কোরআন ওয়েবসাইট</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📖 কোরআন শরীফ</h1>
+        <button id="darkModeToggle">🌙</button>
+        <input type="text" id="searchAyah" placeholder="🔍 আয়াত অনুসন্ধান করুন...">
+        <select id="surahList"></select>
+    </header>
 
+    <main>
+        <div id="surahContent">
+            <h2 id="surahTitle"></h2>
+            <p id="ayahText"></p>
+            <p id="translationBn"></p>
+            <p id="translationEn"></p>
+        </div>
+        <div class="controls">
+            <button id="copyAyah">📋 কপি</button>
+            <button id="bookmarkAyah">⭐ বুকমার্ক</button>
+            <button id="shareAyah">📤 শেয়ার</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>📖 Powered by Open Source</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
