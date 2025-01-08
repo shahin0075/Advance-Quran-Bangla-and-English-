@@ -1,25 +1,80 @@
-/* 🌙 ডার্ক মোড & লাইট মোড */
+/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Amiri', serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    transition: background 0.3s, color 0.3s;
 }
+
 header {
-    background: #008080;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#ayahText {
+    padding: 20px;
+    text-align: center;
     font-size: 24px;
-    color: #006600;
-    direction: rtl;
 }
-.dark-mode {
-    background-color: #121212;
-    color: #fff;
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#surah-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.surah-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.surah-card:hover {
+    transform: scale(1.05);
+}
+
+.surah-card h3 {
+    margin: 10px 0;
+    color: #1e3c72;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
 }
