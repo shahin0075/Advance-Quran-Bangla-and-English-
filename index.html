@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📖 কোরআন ওয়েবসাইট</title>
+    <title>আল কুরআন - পথপ্রদর্শক</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>📖 কোরআন শরীফ</h1>
-        <button id="darkModeToggle">🌙</button>
-        <input type="text" id="searchAyah" placeholder="🔍 আয়াত অনুসন্ধান করুন...">
-        <select id="surahList"></select>
+        <h1>আল কুরআন - পথপ্রদর্শক</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#surahs">সূরাসমূহ</a></li>
+                <li><a href="#about">পরিচিতি</a></li>
+                <li><a href="#features">ফিচারসমূহ</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <main>
-        <div id="surahContent">
-            <h2 id="surahTitle"></h2>
-            <p id="ayahText"></p>
-            <p id="translationBn"></p>
-            <p id="translationEn"></p>
-        </div>
-        <div class="controls">
-            <button id="copyAyah">📋 কপি</button>
-            <button id="bookmarkAyah">⭐ বুকমার্ক</button>
-            <button id="shareAyah">📤 শেয়ার</button>
-        </div>
-    </main>
-
-    <footer>
-        <p>📖 Powered by Open Source</p>
-    </footer>
     
-    <script src="script.js"></script>
+    <section id="surahs">
+        <h2>সূরাসমূহ</h2>
+        <div id="surah-list"></div>
+    </section>
+    
+    <section id="features">
+        <h2>ফিচারসমূহ</h2>
+        <ul>
+            <li>ডার্ক মোড সাপোর্ট</li>
+            <li>বুকমার্ক সিস্টেম</li>
+            <li>তাজবিদ রঙকরণ সহ আরবি পাঠ</li>
+            <li>প্রতিদিনের আয়াত নোটিফিকেশন</li>
+            <li>লাইভ সার্চ অপশন</li>
+            <li>ওয়ার্ড-বাই-ওয়ার্ড অর্থ ও ব্যাকরণ বিশ্লেষণ</li>
+        </ul>
+    </section>
+    
+    <section id="about">
+        <h2>মোহাম্মদ শেখ শাহিনুর রহমান</h2>
+        <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/b02mvc2hucu96hchlksdjmogii._SY450_CR0%2C0%2C450%2C450_.jpg" alt="Mohammad Sheikh Shahinur Rahman">
+        <p>সফটওয়্যার ইঞ্জিনিয়ার, কবি ও লেখক।</p>
+        <p><strong>ওয়েবসাইট:</strong> <a href="https://www.shahinur.amadersomaj.com">shahinur.amadersomaj.com</a></p>
+        <p><strong>Twitter:</strong> <a href="https://twitter.com/Shahinalam3546">@Shahinalam3546</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/Shahinurrahman.0.Official">Facebook</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/shahinur3546/">@shahinur3546</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohammad-sheikh-shahinur-rahman">LinkedIn</a></p>
+    </section>
 </body>
 </html>
